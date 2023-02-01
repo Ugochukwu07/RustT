@@ -9,14 +9,26 @@ use std::io::prelude::*;
 use std::cmp::Ordering;
 
 fn main(){
+    //FOR LOOPS
+    // let numbers = 40..70;
+    // for i in numbers {
+    //     println!("The number is {}", i);
+    // }
+
+    // let animals = vec!["Dog", "Cat", "Hen"];
+    // for (index, a) in animals.iter().enumerate() {
+    //     println!("this index {}, is {}", index, a);
+    // }
+
+
     //FILES
-    let mut file = File::open("info.txt").expect("Can't open file");
+    // let mut file = File::open("info.txt").expect("Can't open file");
 
-    let mut contents = String::new();
-    file.read_to_string(&mut contents)
-        .expect("Oops!, Can't read file");
+    // let mut contents = String::new();
+    // file.read_to_string(&mut contents)
+    //     .expect("Oops!, Can't read file");
 
-    println!("File Contents:\n\n{}", contents);
+    // println!("File Contents:\n\n{}", contents);
 
     //VECTORS
     // let vec1: Vec<i32> = Vec::new();
