@@ -1,0 +1,19 @@
+Here's a sample code in PHP to generate a random string of letters and numbers (alphanumeric) for a file name:
+
+php
+Copy code
+<?php
+
+$length = 10; // desired length of the random string
+$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+$characters_length = strlen($characters);
+$random_string = '';
+
+for ($i = 0; $i < $length; $i++) {
+  $random_string .= $characters[rand(0, $characters_length - 1)];
+}
+
+// Use $random_string as the new file name
+
+?>
+You can adjust the length and characters used for generating the random string as desired.
