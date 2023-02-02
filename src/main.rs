@@ -21,17 +21,52 @@
 // fn print_color (c: &Color){
 //     println!("Color - R:{}, G:{}, B:{}", c.red, c.green, c.blue);
 // }
+// struct Rectangle {
+//     width: u32,
+//     lenght: u32
+// }
+
+// impl Rectangle {
+//     fn print_description(&self){
+//         println!("Rectangle: {} x {}", &self.width, &self.lenght)
+//     }
+
+//     fn is_square(&self) -> bool{
+//         &self.lenght == &self.width 
+//     }
+// }
+
+struct Person {
+    name: String,
+    age: u8
+}
+
+impl ToString for Person{
+    fn to_string(&self) -> String {
+        return format!("My name is {}, and am {}", &self.name, &self.age);
+    }
+}
+
 fn main(){
+    //TRAITS
+    let ugo = Person { name: String::from("Ugochukwu"), age: 21 };
+    println!("{}", ugo.to_string());
+
+    //Impl Keyword (Implementation)
+    // let my_rect = Rectangle {width: 100, lenght: 100};  
+    // my_rect.print_description();
+    // println!("Rectangle is square: {}", my_rect.is_square());
+
     //ARRAY
-    let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
-    let my_num = [2; 300];
+    // let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    // let my_num = [2; 300];
 
     // for i in 0..numbers.len(){
     //     println!("{}", i);
     // }
-    for i in my_num.iter(){
-        println!("{}", i);
-    }
+    // for i in my_num.iter(){
+    //     println!("{}", i);
+    // }
 
     //Pass by Reference
     // let blue = Color {red: 0, green: 0, blue: 225};
