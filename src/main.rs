@@ -1,16 +1,63 @@
 #![allow(unused)]
 
-use core::num;
-use std::io;
-use rand::Rng;
-use std::io::{Write, BufReader, BufRead, ErrorKind};
-use std::fs::File;
-use std::io::prelude::*;
-use std::cmp::Ordering;
+// use core::num;
+// use std::io;
+// use rand::Rng;
+// use std::io::{Write, BufReader, BufRead, ErrorKind};
+// use std::fs::File;
+// use std::io::prelude::*;
+// use std::cmp::Ordering;
 
+// struct Color{
+//     red: u8,
+//     green: u8,
+//     blue: u8
+// }
+
+// struct Color(u8, u8, u8);
+
+// use core::num;
+
+// fn print_color (c: &Color){
+//     println!("Color - R:{}, G:{}, B:{}", c.red, c.green, c.blue);
+// }
 fn main(){
+    //ARRAY
+    let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    let my_num = [2; 300];
+
+    // for i in 0..numbers.len(){
+    //     println!("{}", i);
+    // }
+    for i in my_num.iter(){
+        println!("{}", i);
+    }
+
+    //Pass by Reference
+    // let blue = Color {red: 0, green: 0, blue: 225};
+    // print_color(&blue);
+    // print_color(&blue);
+
+    //TUPLE STRUCTS
+    // let mut colors = Color(223, 45, 89);
+    // colors.2 = 100;
+    // println!("Red is {}, {}, {}", colors.1, colors.2, colors.0);
+
+    // //STRUCT
+    // let mut bg = Color {red: 255, green: 211, blue: 204};
+    // bg.green = 045;
+    // println!("red: {}, green: {}, blue: {}", bg.red, bg.green, bg.blue);
+
+
     //References
-    
+    // let mut x = 10;
+    // // let xr = &x;
+    // {
+    //     let dom = &mut x;
+    //     *dom+=1;
+    // }
+
+    // println!("x is {}", x);
 
     //SHADOWING
     // let mut x = 10;
