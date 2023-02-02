@@ -9,6 +9,48 @@ use std::io::prelude::*;
 use std::cmp::Ordering;
 
 fn main(){
+    //References
+    
+
+    //SHADOWING
+    // let mut x = 10;
+    // {
+    //     x = 15;
+    //     println!("x is {}", x);
+
+    //     //do stuff with 15
+    // }
+    
+    // let x = "X is now a String";
+    // println!("x is {}", x);
+
+    // let x = true;
+    // println!("x is {}", x);
+
+    //CODE BLOCKS
+    // let x = 10;
+    // {
+    //     let y = 5;
+    //     println!("x: {}, y: {}", x,y);
+    // }
+
+    //FUNCTIONS
+    // print_numbers_to(20);
+
+    // fn print_numbers_to(num: u32){
+    //     for n in 1..num{
+    //         if is_even(n) {
+    //             println!("{} is even", n);
+    //         } else {
+    //             println!("{} is old", n);
+    //         }
+    //     }
+    // }
+
+    // fn is_even(num: u32) -> bool {
+    //     return num % 2 == 0;
+    // }
+
     //FOR LOOPS
     // let numbers = 40..70;
     // for i in numbers {
@@ -22,7 +64,8 @@ fn main(){
 
 
     //FILES
-    // let mut file = File::open("info.txt").expect("Can't open file");
+    // let mut file = File::open("info.txt")
+    //                         .expect("Can't open file");
 
     // let mut contents = String::new();
     // file.read_to_string(&mut contents)
@@ -30,7 +73,7 @@ fn main(){
 
     // println!("File Contents:\n\n{}", contents);
 
-    //VECTORS
+    // //VECTORS
     // let vec1: Vec<i32> = Vec::new();
     // let mut vec2: Vec<i8> = vec![];
     // println!("{:?}", vec1);
